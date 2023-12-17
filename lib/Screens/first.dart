@@ -28,23 +28,23 @@ class _FirstState extends State<First> {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        leading: Builder(
-          builder: (BuildContext context) {
-            return Row(
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.menu),
-                  onPressed: () {
-                    Scaffold.of(context).openDrawer();
-                  },
-                ),
-              ],
-            );
-          },
-        ),
-        title: const Text("Boys List"),
-      ),
+      // appBar: AppBar(
+      //   leading: Builder(
+      //     builder: (BuildContext context) {
+      //       return Row(
+      //         children: [
+      //           IconButton(
+      //             icon: const Icon(Icons.menu),
+      //             onPressed: () {
+      //               Scaffold.of(context).openDrawer();
+      //             },
+      //           ),
+      //         ],
+      //       );
+      //     },
+      //   ),
+      //   title: const Text("Boys List"),
+      // ),
       drawer: const CustomDrawer(),
       body: ListView(
         padding: const EdgeInsets.all(10),
